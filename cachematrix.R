@@ -29,7 +29,6 @@ cacheSolve <- function(x, ...) {
     ## otherwise computes the matrix from x, saves it to the cache and returns s
     data <- x$get()
     s <- solve(data, ...)
-    ##
     x$setSolve(s)
     s
 }
