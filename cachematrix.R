@@ -19,8 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## gets the inversed matrix from a special object created by makeCacheMatrix 
 cacheSolve <- function(x, ...) {
-    ## if it is available gets cached matrix saved in variable x 
-    ## and returns its inverse saved as s 
+    ## if it is available gets cached matrix saved in x and returns its inverse saved as s 
     s <- x$getSolve()
     if(!is.null(s)) {
         message("getting cached data")
